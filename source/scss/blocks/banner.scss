@@ -17,7 +17,7 @@
         border-radius: 0;
         -webkit-mask:
           linear-gradient(var(--color-white) 0 0),
-          url('/img/clip-path/section-bot-right.svg') bottom right / 310px 50px no-repeat;
+          url('../../img/clip-path/section-bot-right.svg') bottom right / 310px 50px no-repeat;
         mask-composite: exclude;
 
         &::after {
@@ -36,15 +36,15 @@
     position: relative;
     -webkit-mask:
       linear-gradient(var(--color-white) 0 0),
-      url('/img/clip-path/banner-top-left.svg') top left / 71px 75px no-repeat,
-      url('/img/clip-path/banner-bot-right.svg') bottom right / 71px 75px no-repeat;
+      url('../../img/clip-path/banner-top-left.svg') top left / 71px 75px no-repeat,
+      url('../../img/clip-path/banner-bot-right.svg') bottom right / 71px 75px no-repeat;
     mask-composite: exclude;
 
     &::after {
       content: '';
       width: 192px;
       height: 224px;
-      background: transparent url('/img/banner-pattern.svg') no-repeat center / contain;
+      background: transparent url('../../img/banner-pattern.svg') no-repeat center / contain;
       position: absolute;
       left: 0;
       bottom: 0;
@@ -127,7 +127,7 @@
           padding: 230px 0 0;
           -webkit-mask:
             linear-gradient(var(--color-white) 0 0),
-            url('/img/clip-path/banner-top-left-sm.svg') top left / 44px 44px no-repeat;
+            url('../../img/clip-path/banner-top-left-sm.svg') top left / 44px 44px no-repeat;
           mask-composite: exclude;
         }
       }
@@ -146,7 +146,7 @@
       position: relative;
       -webkit-mask:
         linear-gradient(var(--color-white) 0 0),
-        url('/img/clip-path/banner-top-left-sm.svg') top left / 44px 44px no-repeat;
+        url('../../img/clip-path/banner-top-left-sm.svg') top left / 44px 44px no-repeat;
       mask-composite: exclude;
 
       &::after {

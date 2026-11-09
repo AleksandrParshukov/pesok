@@ -37,7 +37,7 @@
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 0 12px 0 12px;
-  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/rent/clip-path/desc-top-left.svg") top left/50px 65px no-repeat, url("/img/rent/clip-path/desc-bot-right.svg") bottom right/50px 65px no-repeat;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/rent/clip-path/desc-top-left.svg") top left/50px 65px no-repeat, url("../../img/rent/clip-path/desc-bot-right.svg") bottom right/50px 65px no-repeat;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -68,7 +68,7 @@
     border-left: none;
   }
   .description__img img {
-    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/rent/clip-path/desc-top-left-sm.svg") top left/40px 55px no-repeat, url("/img/rent/clip-path/desc-bot-right-sm.svg") bottom right/40px 55px no-repeat;
+    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/rent/clip-path/desc-top-left-sm.svg") top left/40px 55px no-repeat, url("../../img/rent/clip-path/desc-bot-right-sm.svg") bottom right/40px 55px no-repeat;
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }

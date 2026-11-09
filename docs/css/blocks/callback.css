@@ -7,10 +7,10 @@
 }
 .callback .wrapper {
   padding-block: 60px 80px;
-  background-image: url("/img/callback-right.svg"), url("/img/callback-left.svg"), linear-gradient(360deg, #ffd303 0%, #fcb712 100%);
+  background-image: url("../../img/callback-right.svg"), url("../../img/callback-left.svg"), linear-gradient(360deg, #ffd303 0%, #fcb712 100%);
   background-repeat: no-repeat;
   background-position: top right, bottom left 113px, center;
-  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/clip-path/section-bot-left.svg") bottom 0 left -75px/230px 37px no-repeat;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/clip-path/section-bot-left.svg") bottom 0 left -75px/230px 37px no-repeat;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -50,7 +50,7 @@
   }
   .callback .wrapper {
     padding-bottom: 60px;
-    background-image: url("/img/callback-right-sm.svg"), url("/img/callback-left.svg"), linear-gradient(360deg, #ffd303 0%, #fcb712 100%);
+    background-image: url("../../img/callback-right-sm.svg"), url("../../img/callback-left.svg"), linear-gradient(360deg, #ffd303 0%, #fcb712 100%);
     background-position: bottom right, bottom left -5px, center;
     background-size: auto, 62px 57px, auto;
     -webkit-mask: none;

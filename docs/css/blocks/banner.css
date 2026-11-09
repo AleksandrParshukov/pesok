@@ -11,7 +11,7 @@
   min-height: 578px;
   padding: 40px 32px;
   border-radius: 0;
-  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/clip-path/section-bot-right.svg") bottom right/310px 50px no-repeat;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/clip-path/section-bot-right.svg") bottom right/310px 50px no-repeat;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -25,7 +25,7 @@
   background: transparent no-repeat center/cover;
   border-radius: 0 var(--border-radius) 0 var(--border-radius);
   position: relative;
-  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/clip-path/banner-top-left.svg") top left/71px 75px no-repeat, url("/img/clip-path/banner-bot-right.svg") bottom right/71px 75px no-repeat;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/clip-path/banner-top-left.svg") top left/71px 75px no-repeat, url("../../img/clip-path/banner-bot-right.svg") bottom right/71px 75px no-repeat;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -33,7 +33,7 @@
   content: "";
   width: 192px;
   height: 224px;
-  background: transparent url("/img/banner-pattern.svg") no-repeat center/contain;
+  background: transparent url("../../img/banner-pattern.svg") no-repeat center/contain;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -99,7 +99,7 @@
   }
   .banner.top-section .banner__wrapper {
     padding: 230px 0 0;
-    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/clip-path/banner-top-left-sm.svg") top left/44px 44px no-repeat;
+    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/clip-path/banner-top-left-sm.svg") top left/44px 44px no-repeat;
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
@@ -113,7 +113,7 @@
     background-size: 100% 288px;
     background-position: top center;
     position: relative;
-    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/clip-path/banner-top-left-sm.svg") top left/44px 44px no-repeat;
+    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/clip-path/banner-top-left-sm.svg") top left/44px 44px no-repeat;
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }

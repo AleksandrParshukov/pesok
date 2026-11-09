@@ -10,8 +10,8 @@
     background: linear-gradient(180deg, #004ba2 0%, #2162ae 100%);
     -webkit-mask:
       linear-gradient(var(--color-white) 0 0),
-      url('/img/clip-path/section-top-right.svg') top right / 310px 50px no-repeat,
-      url('/img/clip-path/section-bot-left.svg') bottom left / 310px 50px no-repeat;
+      url('../../img/clip-path/section-top-right.svg') top right / 310px 50px no-repeat,
+      url('../../img/clip-path/section-bot-left.svg') bottom left / 310px 50px no-repeat;
     mask-composite: exclude;
   }
 
@@ -62,8 +62,8 @@
       padding-block: 60px;
       -webkit-mask:
         linear-gradient(var(--color-white) 0 0),
-        url('/img/clip-path/section-top-right-sm.svg') top right / 100px 30px no-repeat,
-        url('/img/clip-path/section-bot-left-sm.svg') bottom left / 100px 30px no-repeat;
+        url('../../img/clip-path/section-top-right-sm.svg') top right / 100px 30px no-repeat,
+        url('../../img/clip-path/section-bot-left-sm.svg') bottom left / 100px 30px no-repeat;
       mask-composite: exclude;
     }
 

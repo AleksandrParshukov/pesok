@@ -10,10 +10,10 @@
 }
 .booking .wrapper {
   padding-block: 60px 80px;
-  background-image: url("/img/rent/booking-right.svg"), url("/img/rent/booking-top-left.svg"), url("/img/rent/booking-bot-left.svg"), url("/img/rent/booking-bot-right.svg"), linear-gradient(360deg, #ffd303 0%, #fcb712 100%);
+  background-image: url("../../img/rent/booking-right.svg"), url("../../img/rent/booking-top-left.svg"), url("../../img/rent/booking-bot-left.svg"), url("../../img/rent/booking-bot-right.svg"), linear-gradient(360deg, #ffd303 0%, #fcb712 100%);
   background-repeat: no-repeat;
   background-position: top right, top left, bottom left, bottom right, center;
-  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/clip-path/section-bot-left.svg") bottom 0 left -75px/230px 37px no-repeat;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/clip-path/section-bot-left.svg") bottom 0 left -75px/230px 37px no-repeat;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -58,7 +58,7 @@
   }
   .booking .wrapper {
     padding-bottom: 60px;
-    background-image: url("/img/rent/booking-right-sm.svg"), url("/img/rent/booking-top-left-sm.svg"), url("/img/callback-left.svg"), linear-gradient(360deg, #ffd303 0%, #fcb712 100%);
+    background-image: url("../../img/rent/booking-right-sm.svg"), url("../../img/rent/booking-top-left-sm.svg"), url("../../img/callback-left.svg"), linear-gradient(360deg, #ffd303 0%, #fcb712 100%);
     background-position: bottom right, top left, bottom left -5px, center;
     background-size: auto, auto, 62px 57px, auto;
     -webkit-mask: none;

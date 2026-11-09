@@ -8,8 +8,8 @@
   &.primary {
     .wrapper {
       background-image:
-        url('/img/index/pricing-bg-left-top-primary.svg'), url('/img/index/pricing-bg-left-bot-primary.svg'),
-        url('/img/index/pricing-bg-right-primary.svg'), linear-gradient(180deg, #2593d0 0%, #68b2e2 100%);
+        url('../../img/index/pricing-bg-left-top-primary.svg'), url('../../img/index/pricing-bg-left-bot-primary.svg'),
+        url('../../img/index/pricing-bg-right-primary.svg'), linear-gradient(180deg, #2593d0 0%, #68b2e2 100%);
     }
 
     .pricing__row {
@@ -48,8 +48,8 @@
   .wrapper {
     padding-block: 100px;
     background-image:
-      url('/img/index/pricing-bg-left-top.svg'), url('/img/index/pricing-bg-left-bot.svg'),
-      url('/img/index/pricing-bg-right.svg'), linear-gradient(180deg, #fcb712 0%, #ffd303 100%);
+      url('../../img/index/pricing-bg-left-top.svg'), url('../../img/index/pricing-bg-left-bot.svg'),
+      url('../../img/index/pricing-bg-right.svg'), linear-gradient(180deg, #fcb712 0%, #ffd303 100%);
     background-repeat: no-repeat;
     background-size: auto;
     background-position:
@@ -60,7 +60,7 @@
     position: relative;
     -webkit-mask:
       linear-gradient(var(--color-white) 0 0),
-      url('/img/clip-path/section-bot-right.svg') bottom right / 310px 50px no-repeat;
+      url('../../img/clip-path/section-bot-right.svg') bottom right / 310px 50px no-repeat;
     mask-composite: exclude;
   }
 
@@ -197,7 +197,7 @@
       content: '';
       width: 290px;
       height: 83px;
-      background: url('/img/price-net.svg') no-repeat center / contain;
+      background: url('../../img/price-net.svg') no-repeat center / contain;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -311,7 +311,7 @@
     .wrapper {
       -webkit-mask:
         linear-gradient(var(--color-white) 0 0),
-        url('/img/clip-path/section-bot-right-sm.svg') bottom right / 100px 30px no-repeat;
+        url('../../img/clip-path/section-bot-right-sm.svg') bottom right / 100px 30px no-repeat;
       mask-composite: exclude;
     }
   }

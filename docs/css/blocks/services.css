@@ -61,7 +61,7 @@
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 0 12px 0 12px;
-  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/index/clip-path/services-top-left.svg") top left/48px 44px no-repeat, url("/img/index/clip-path/services-bot-right.svg") bottom right/48px 44px no-repeat;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/index/clip-path/services-top-left.svg") top left/48px 44px no-repeat, url("../../img/index/clip-path/services-bot-right.svg") bottom right/48px 44px no-repeat;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -114,7 +114,7 @@
   .services__img img {
     max-width: 700px;
     min-height: 163px;
-    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/index/clip-path/services-top-left-sm.svg") top left/31px 31px no-repeat, url("/img/index/clip-path/services-bot-right-sm.svg") bottom right/31px 31px no-repeat;
+    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/index/clip-path/services-top-left-sm.svg") top left/31px 31px no-repeat, url("../../img/index/clip-path/services-bot-right-sm.svg") bottom right/31px 31px no-repeat;
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }

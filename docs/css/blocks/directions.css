@@ -12,7 +12,7 @@
 .directions .wrapper {
   padding-block: 100px;
   background: linear-gradient(180deg, #59a346 0%, #70be44 100%);
-  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/clip-path/section-top-left.svg") top left/230px 37px no-repeat, url("/img/clip-path/section-bot-right.svg") bottom right/230px 37px no-repeat;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/clip-path/section-top-left.svg") top left/230px 37px no-repeat, url("../../img/clip-path/section-bot-right.svg") bottom right/230px 37px no-repeat;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -34,7 +34,7 @@
   object-fit: cover;
   margin-bottom: auto;
   border-radius: 12px 0 12px 0;
-  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/index/clip-path/docs-top-right.svg") top right/50px 50px no-repeat, url("/img/index/clip-path/docs-bot-left.svg") bottom left/50px 50px no-repeat;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/index/clip-path/docs-top-right.svg") top right/50px 50px no-repeat, url("../../img/index/clip-path/docs-bot-left.svg") bottom left/50px 50px no-repeat;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -58,7 +58,7 @@
   .directions .wrapper {
     padding-block: 60px;
     background: linear-gradient(180deg, #59a346 0%, #70be44 100%);
-    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/clip-path/section-top-left.svg") top left/198px 32px no-repeat, url("/img/clip-path/section-bot-right-sm.svg") bottom right/100px 30px no-repeat;
+    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/clip-path/section-top-left.svg") top left/198px 32px no-repeat, url("../../img/clip-path/section-bot-right-sm.svg") bottom right/100px 30px no-repeat;
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
@@ -77,7 +77,7 @@
     object-fit: cover;
     margin-bottom: auto;
     border-radius: 12px 0 12px 0;
-    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/index/clip-path/docs-top-right-sm.svg") top right/24px 24px no-repeat, url("/img/index/clip-path/docs-bot-left-sm.svg") bottom left/24px 24px no-repeat;
+    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../../img/index/clip-path/docs-top-right-sm.svg") top right/24px 24px no-repeat, url("../../img/index/clip-path/docs-bot-left-sm.svg") bottom left/24px 24px no-repeat;
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }

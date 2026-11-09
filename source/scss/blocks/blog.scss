@@ -64,8 +64,8 @@
       border-radius: 0 12px 0 12px;
       -webkit-mask:
         linear-gradient(var(--color-white) 0 0),
-        url('/img/clip-path/blog-top-left.svg') top left / 35px 45px no-repeat,
-        url('/img/clip-path/blog-bot-right.svg') bottom right / 35px 45px no-repeat;
+        url('../../img/clip-path/blog-top-left.svg') top left / 35px 45px no-repeat,
+        url('../../img/clip-path/blog-bot-right.svg') bottom right / 35px 45px no-repeat;
       mask-composite: exclude;
     }
 

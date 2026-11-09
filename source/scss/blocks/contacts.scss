@@ -53,7 +53,7 @@
       border-radius: 0 12px 12px 12px;
       -webkit-mask:
         linear-gradient(var(--color-white) 0 0),
-        url('/img/index/clip-path/map-top-left.svg') top left / 55px 60px no-repeat;
+        url('../../img/index/clip-path/map-top-left.svg') top left / 55px 60px no-repeat;
       mask-composite: exclude;
     }
 
@@ -110,7 +110,7 @@
         height: 160px;
         -webkit-mask:
           linear-gradient(var(--color-white) 0 0),
-          url('/img/index/clip-path/map-top-left-sm.svg') top left / 25px 25px no-repeat;
+          url('../../img/index/clip-path/map-top-left-sm.svg') top left / 25px 25px no-repeat;
         mask-composite: exclude;
       }
     }

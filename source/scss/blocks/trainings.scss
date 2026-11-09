@@ -40,7 +40,7 @@
           border-radius: 12px 0 12px 12px;
           -webkit-mask:
             linear-gradient(var(--color-white) 0 0),
-            url('/img/index/clip-path/trainings-top-right.svg') top right / 55px 55px no-repeat;
+            url('../../img/index/clip-path/trainings-top-right.svg') top right / 55px 55px no-repeat;
           mask-composite: exclude;
         }
       }
@@ -90,7 +90,7 @@
       border-radius: 0 12px 12px 12px;
       -webkit-mask:
         linear-gradient(var(--color-white) 0 0),
-        url('/img/index/clip-path/trainings-top-left.svg') top left / 55px 55px no-repeat;
+        url('../../img/index/clip-path/trainings-top-left.svg') top left / 55px 55px no-repeat;
       mask-composite: exclude;
     }
   }
@@ -123,7 +123,7 @@
           img {
             -webkit-mask:
               linear-gradient(var(--color-white) 0 0),
-              url('/img/index/clip-path/trainings-top-right-sm.svg') top right / 25px 25px no-repeat;
+              url('../../img/index/clip-path/trainings-top-right-sm.svg') top right / 25px 25px no-repeat;
             mask-composite: exclude;
           }
         }
@@ -160,7 +160,7 @@
         max-width: 700px;
         -webkit-mask:
           linear-gradient(var(--color-white) 0 0),
-          url('/img/index/clip-path/trainings-top-left-sm.svg') top left / 25px 25px no-repeat;
+          url('../../img/index/clip-path/trainings-top-left-sm.svg') top left / 25px 25px no-repeat;
         mask-composite: exclude;
       }
     }
