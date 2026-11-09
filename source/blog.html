@@ -1,0 +1,100 @@
+@@include('./_header.html', {css: "blog"})
+
+<section class="banner">
+  <div class="wrapper">
+    <div class="banner__wrapper">
+      <div class="banner__content">
+        <ol class="breadcrumbs">
+          <li><a href="/">Главная</a></li>
+          <li>
+            <p>Блог</p>
+          </li>
+        </ol>
+
+        <h1 class="h1">
+          <span class="text-green">Блог</span> о спорте и событиях
+        </h1>
+        <p class="banner__text">
+          Полезные материалы о пляжном волейболе, футболе, теннисе, детском спорте, тренировках и мероприятиях в Песке.
+        </p>
+        <div class="banner__controls">
+          <a href="#" class="btn btn-green">ОБСУДИТЬ МЕРОПРИЯТИЕ</a>
+        </div>
+        <div class="banner__socials">
+          <a href="#" class="btn-more">
+            <span>VK</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="btn-more">
+            <span>Telegram</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="btn-more">
+            <span>MAX</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="btn-more">
+            <span>RuTube</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog">
+  <p class="title-out">[ ФИЛЬТР ]</p>
+  <div class="blog__filters js_filter">
+    <button class="blog__filter-toggle to-sm js_filter_toggle">
+      <span class="js_filter_current">Все кейсы</span>
+      <svg width="34" height="15" viewBox="0 0 34 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.582031 13.25L17.3205 1.25L32.582 13.25" stroke="currentColor" stroke-width="2" />
+      </svg>
+    </button>
+    <ul class="blog__filter-list js_filter_list">
+      <li><a href="#" class="active">Все статьи</a></li>
+      <li><a href="#">Пляжный волейбол</a></li>
+      <li><a href="#">детский футбол</a></li>
+      <li><a href="#">Пляжный теннис</a></li>
+      <li><a href="#">корпоративные мероприятия</a></li>
+      <li><a href="#">Детский спорт</a></li>
+      <li><a href="#">Ивент</a></li>
+    </ul>
+  </div>
+
+  <ul class="blog__list">
+    <li class="blog__item">
+      <img src="/img/cases/cases-1.png" height="236" alt="">
+      <p class="blog__caption">Корпоратив в стиле “Безумный Макс” для DINS</p>
+      <a href="/blog_zoom.html" class="btn btn-black">ПОДРОБНЕЕ</a>
+    </li>
+    <li class="blog__item">
+      <img src="/img/cases/cases-2.png" height="236" alt="">
+      <p class="blog__caption">новогодний праздник для Авито</p>
+      <a href="/blog_zoom.html" class="btn btn-black">ПОДРОБНЕЕ</a>
+    </li>
+    <li class="blog__item">
+      <img src="/img/cases/cases-3.png" height="236" alt="">
+      <p class="blog__caption">корпоративный турнир по пляжному волейболу для свадебного event-агентства</p>
+      <a href="/blog_zoom.html" class="btn btn-black">ПОДРОБНЕЕ</a>
+    </li>
+    <li class="blog__item">
+      <img src="/img/cases/cases-4.png" height="236" alt="">
+      <p class="blog__caption">благотворительный турнир «Строители-благотворители»</p>
+      <a href="/blog_zoom.html" class="btn btn-black">ПОДРОБНЕЕ</a>
+    </li>
+  </ul>
+  <a href="#" class="blog__more">ПОКАЗАТЬ ЕЩЕ</a>
+</section>
+
+@@include('./_callback.html')
+@@include('./_footer.html')

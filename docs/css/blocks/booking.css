@@ -1,0 +1,72 @@
+.booking {
+  margin-block: 32px -37px;
+  position: relative;
+}
+.booking .h1 {
+  text-align: center;
+  color: var(--color-black);
+  max-width: 700px;
+  margin-inline: auto;
+}
+.booking .wrapper {
+  padding-block: 60px 80px;
+  background-image: url("/img/rent/booking-right.svg"), url("/img/rent/booking-top-left.svg"), url("/img/rent/booking-bot-left.svg"), url("/img/rent/booking-bot-right.svg"), linear-gradient(360deg, #ffd303 0%, #fcb712 100%);
+  background-repeat: no-repeat;
+  background-position: top right, top left, bottom left, bottom right, center;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/clip-path/section-bot-left.svg") bottom 0 left -75px/230px 37px no-repeat;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.booking__form {
+  max-width: 700px;
+  margin-top: 60px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.booking__form .btn {
+  width: 100%;
+  margin-top: 8px;
+}
+.booking__input {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+  padding: 12px;
+  background-color: rgba(254, 254, 254, 0.4);
+  border: 1px solid var(--color-white);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+.booking__input:hover {
+  background-color: rgba(254, 254, 254, 0.8);
+}
+
+@media (max-width: 991.5px) {
+  .booking {
+    margin-bottom: 0;
+  }
+  .booking .title-out {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .booking .h1 {
+    text-align: center;
+  }
+  .booking .wrapper {
+    padding-bottom: 60px;
+    background-image: url("/img/rent/booking-right-sm.svg"), url("/img/rent/booking-top-left-sm.svg"), url("/img/callback-left.svg"), linear-gradient(360deg, #ffd303 0%, #fcb712 100%);
+    background-position: bottom right, top left, bottom left -5px, center;
+    background-size: auto, auto, 62px 57px, auto;
+    -webkit-mask: none;
+  }
+  .booking__form {
+    margin-top: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,73 @@
+@import './blocks/banner.css';
+@import './blocks/info.css';
+@import './blocks/description.css';
+@import './blocks/about.css';
+@import './blocks/gallery.css';
+@import './blocks/faq.css';
+@import './blocks/booking.css';
+@import './blocks/pricelist.css';
+.banner__wrapper {
+  background-image: url("../img/detskie_prazdniki/banner.png");
+}
+.banner__content {
+  background: linear-gradient(180deg, #68b2e2 0%, #2593d0 100%);
+}
+.banner__content .h1 {
+  color: var(--color-yellow);
+}
+.banner__text {
+  color: var(--color-white);
+}
+.banner .btn-more:hover {
+  color: var(--color-yellow);
+}
+
+.breadcrumbs {
+  color: var(--color-white);
+}
+
+.about {
+  color: var(--color-primary);
+}
+.about .h1 {
+  color: var(--color-primary);
+}
+.about .wrapper {
+  background-image: url("/img/detskie_prazdniki/about-right.svg"), linear-gradient(360deg, #ffd303 0%, #fb0 100%);
+  background-position: top right, center;
+  background-repeat: no-repeat;
+}
+.about__list {
+  margin-top: 60px;
+}
+.about__list .card {
+  --bg-color: transparent;
+  --border-color: var(--color-primary);
+  flex: 1 1 40%;
+}
+.about__value, .about__name {
+  color: var(--color-primary);
+}
+
+.card::before {
+  content: "";
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/clip-path/card-left.svg") top left/36px 236px no-repeat, url("/img/clip-path/card-right.svg") top right/36px 236px no-repeat;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+@media (max-width: 767.5px) {
+  .about .card__content {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}

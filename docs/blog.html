@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Стили страницы -->
+    
+    <link rel="stylesheet" href="/css/blog.css" /> 
+    <title>Песок</title>
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <a href="/" class="header__logo">
+          <img src="./img/logo-1.png" height="36" alt="">
+          <img src="./img/logo-2.png" height="36" alt="">
+        </a>
+
+        <div class="header__menu">
+          <button type="button" class="header__toggle to-lg js_menu_open">
+            <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0.750326L24 0.75M0 6.75016H24M0 12.75H24" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <nav class="main-nav">
+            <div class="main-nav__content">
+              <div class="main-nav__header to-lg">
+                <a href="/" class="main-nav__logo">
+                  <img src="./img/logo-1.png" height="36" alt="">
+                  <img src="./img/logo-2.png" height="36" alt="">
+                </a>
+                <button class="main-nav__close js_menu_close">
+                  <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 7L24 21M24 7L8 21" stroke="#010101" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </button>
+              </div>
+
+              <ul class="main-nav__list">
+                <li><a href="/sport.html" class="main-nav__link">Спорт</a></li>
+                <li><a href="/event.html" class="main-nav__link">Ивент</a></li>
+                <li><a href="equipment.html" class="main-nav__link">цены</a></li>
+                <li><a href="equipment.html" class="main-nav__link">Кейсы</a></li>
+                <li><a href="equipment.html" class="main-nav__link">блог</a></li>
+                <li><a href="equipment.html" class="main-nav__link">контакты</a></li>
+                <li><a href="equipment.html" class="main-nav__link">о нас</a></li>
+                <li><a href="equipment.html" class="main-nav__link">документы</a></li>
+              </ul>
+              <a href="#" class="btn">Записаться онлайн</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+<section class="banner">
+  <div class="wrapper">
+    <div class="banner__wrapper">
+      <div class="banner__content">
+        <ol class="breadcrumbs">
+          <li><a href="/">Главная</a></li>
+          <li>
+            <p>Блог</p>
+          </li>
+        </ol>
+
+        <h1 class="h1">
+          <span class="text-green">Блог</span> о спорте и событиях
+        </h1>
+        <p class="banner__text">
+          Полезные материалы о пляжном волейболе, футболе, теннисе, детском спорте, тренировках и мероприятиях в Песке.
+        </p>
+        <div class="banner__controls">
+          <a href="#" class="btn btn-green">ОБСУДИТЬ МЕРОПРИЯТИЕ</a>
+        </div>
+        <div class="banner__socials">
+          <a href="#" class="btn-more">
+            <span>VK</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="btn-more">
+            <span>Telegram</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="btn-more">
+            <span>MAX</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="btn-more">
+            <span>RuTube</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog">
+  <p class="title-out">[ ФИЛЬТР ]</p>
+  <div class="blog__filters js_filter">
+    <button class="blog__filter-toggle to-sm js_filter_toggle">
+      <span class="js_filter_current">Все кейсы</span>
+      <svg width="34" height="15" viewBox="0 0 34 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.582031 13.25L17.3205 1.25L32.582 13.25" stroke="currentColor" stroke-width="2" />
+      </svg>
+    </button>
+    <ul class="blog__filter-list js_filter_list">
+      <li><a href="#" class="active">Все статьи</a></li>
+      <li><a href="#">Пляжный волейбол</a></li>
+      <li><a href="#">детский футбол</a></li>
+      <li><a href="#">Пляжный теннис</a></li>
+      <li><a href="#">корпоративные мероприятия</a></li>
+      <li><a href="#">Детский спорт</a></li>
+      <li><a href="#">Ивент</a></li>
+    </ul>
+  </div>
+
+  <ul class="blog__list">
+    <li class="blog__item">
+      <img src="/img/cases/cases-1.png" height="236" alt="">
+      <p class="blog__caption">Корпоратив в стиле “Безумный Макс” для DINS</p>
+      <a href="/blog_zoom.html" class="btn btn-black">ПОДРОБНЕЕ</a>
+    </li>
+    <li class="blog__item">
+      <img src="/img/cases/cases-2.png" height="236" alt="">
+      <p class="blog__caption">новогодний праздник для Авито</p>
+      <a href="/blog_zoom.html" class="btn btn-black">ПОДРОБНЕЕ</a>
+    </li>
+    <li class="blog__item">
+      <img src="/img/cases/cases-3.png" height="236" alt="">
+      <p class="blog__caption">корпоративный турнир по пляжному волейболу для свадебного event-агентства</p>
+      <a href="/blog_zoom.html" class="btn btn-black">ПОДРОБНЕЕ</a>
+    </li>
+    <li class="blog__item">
+      <img src="/img/cases/cases-4.png" height="236" alt="">
+      <p class="blog__caption">благотворительный турнир «Строители-благотворители»</p>
+      <a href="/blog_zoom.html" class="btn btn-black">ПОДРОБНЕЕ</a>
+    </li>
+  </ul>
+  <a href="#" class="blog__more">ПОКАЗАТЬ ЕЩЕ</a>
+</section>
+
+<section class="callback">
+  <h2 class="title-out">[ Обратная связь ]</h2>
+  <div class="wrapper">
+    <p class="h1">свяжитесь с нами</p>
+    <form class="callback__form" action="">
+      <input class="callback__input" type="text" name="" id="" placeholder="ВАШЕ ИМЯ:">
+      <input class="callback__input js_phone_input" type="tel" name="" id="" placeholder="НОМЕР ТЕЛЕФОНА:">
+      <div class="form-group">
+        <button type="submit" class="btn btn-black">Отправить</button>
+        <div class="checkbox">
+          <input type="checkbox" name="callback_privacy" id="callbackPrivacy">
+          <label for="callbackPrivacy">Согласие на обработку персональных данных</label>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__block">
+      <p class="footer__caption">[ навигация ]</p>
+      <ul class="footer__menu">
+        <li><a href="#">Спорт</a></li>
+        <li><a href="#">Ивент</a></li>
+        <li><a href="#">магазин</a></li>
+        <li><a href="#">Кейсы</a></li>
+        <li><a href="#">блог</a></li>
+        <li><a href="#">контакты</a></li>
+        <li><a href="#">о нас</a></li>
+        <li><a href="#">документы</a></li>
+        <li><a href="#">Магазин</a></li>
+      </ul>
+    </div>
+    <div class="footer__block">
+      <p class="footer__caption">[ социальные сети ]</p>
+      <ul class="footer__socials">
+        <li>
+          <a href="#" class="footer__link">
+            <span>VK</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__link">
+            <span>Telegram</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__link">
+            <span>MAX</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__link">
+            <span>RuTube</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__block">
+      <p class="footer__caption">[ КОНТАКТЫ ]</p>
+      <p class="footer__text">Напишите нам</p>
+      <a href="mailto:info@sportpesok.com" class="footer__link">info@sportpesok.com</a>
+      <a href="tel:+78127791029" class="footer__phone">+7(812) 779-10-29</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <a href="/privacy_policy.html" class="footer__link">Политика конфиденциальности</a>
+    <a href="#" class="footer__link">Публичная оферта</a>
+    <a href="#" class="footer__dev">Сайт разработан веб-студией Хэндрег</a>
+  </div>
+</footer>
+
+<div class="cookie js_cookie">
+  <div class="wrapper">
+    <p>
+      Мы используем куки для наилучшего представления нашего сайта. <br>
+      Если Вы продолжите использовать сайт, мы будем считать что Вас это устраивает.
+    </p>
+    <button type="button" class="btn btn-white js_apply_cookie">Хорошо</button>
+    <a href="/privacy_policy.html" class="btn btn-outline-white">Политика конфиденциальности</a>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/jquery.mask.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+
+</html>

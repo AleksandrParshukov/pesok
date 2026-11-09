@@ -1,0 +1,26 @@
+.breadcrumbs {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-primary);
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  a {
+    color: inherit;
+    opacity: 0.8;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &::after {
+      content: '/';
+      margin-inline: 4px;
+    }
+  }
+}
+
+.breadcrumbs-top {
+  padding-top: 44px;
+}

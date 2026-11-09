@@ -1,0 +1,124 @@
+@import './blocks/banner.css';
+@import './blocks/info.css';
+@import './blocks/docs.css';
+@import './blocks/services.css';
+@import './blocks/gallery.css';
+@import './blocks/cases.css';
+@import './blocks/callback.css';
+@import './blocks/brands.css';
+@import './blocks/contacts.css';
+
+@import '_global/variables.scss';
+
+.banner {
+  padding-bottom: 110px !important;
+
+  &__wrapper {
+    background-image: url('../img/event/banner.png');
+  }
+
+  &__content {
+    background: linear-gradient(180deg, #70be44 0%, #59a346 100%);
+
+    .h1 {
+      color: var(--color-yellow);
+    }
+  }
+
+  &__text {
+    color: var(--color-white);
+  }
+
+  .btn-more:hover {
+    color: var(--color-yellow);
+  }
+}
+
+.breadcrumbs {
+  color: var(--color-white);
+}
+
+.info {
+  margin-top: 32px;
+  position: relative;
+
+  .h1 {
+    color: var(--color-black);
+    padding: 32px;
+    border-right: 1px solid var(--color-gray);
+  }
+
+  &__content {
+    display: flex;
+    border-block: 1px solid var(--color-gray);
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    max-width: 613px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    border: none !important;
+
+    &:nth-child(1) {
+      color: var(--color-white);
+      background: linear-gradient(180deg, #70be44 0%, #59a346 100%);
+    }
+    &:nth-child(2) {
+      color: var(--color-primary);
+      background: linear-gradient(180deg, #ffd303 0%, #fb0 100%);
+    }
+    &:nth-child(3) {
+      color: var(--color-white);
+      background: linear-gradient(180deg, #68b2e2 0%, #2593d0 100%);
+    }
+    &:nth-child(4) {
+      color: var(--color-white);
+      background: linear-gradient(180deg, #2162ae 0%, #004ba2 100%);
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .banner {
+    padding-bottom: 60px !important;
+  }
+  
+  .condition {
+    &__content {
+      text-align: start;
+      align-items: start;
+    }
+  }
+
+  .info {
+    .title-out {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .h1 {
+      text-align: center;
+      padding: 12px 24px;
+      border-bottom: 1px solid var(--color-gray);
+      border-right: none;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__desc {
+      text-align: center;
+      max-width: none;
+      padding: 12px 24px;
+    }
+  }
+}

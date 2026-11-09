@@ -1,0 +1,162 @@
+.blog {
+  padding-bottom: 110px;
+  margin-top: 32px;
+  position: relative;
+}
+.blog .h1 {
+  color: var(--color-black);
+  padding: 32px;
+  border-block: 1px solid var(--color-gray);
+}
+.blog__filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--color-gray);
+}
+.blog__filter-list li {
+  height: auto;
+  flex: 1 1 22%;
+}
+.blog__filter-list a {
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  height: 100%;
+  padding: 32px 12px;
+  border-bottom: 1px solid var(--color-gray);
+  border-right: 1px solid var(--color-gray);
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+.blog__filter-list a:hover, .blog__filter-list a.active {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  z-index: 1;
+}
+.blog__list {
+  padding: 60px 32px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 60px;
+}
+.blog__item {
+  display: flex;
+  flex-direction: column;
+}
+.blog__item img {
+  width: 100%;
+  height: 236px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 0 12px 0 12px;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/clip-path/blog-top-left.svg") top left/35px 45px no-repeat, url("/img/clip-path/blog-bot-right.svg") bottom right/35px 45px no-repeat;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.blog__item .btn {
+  width: 100%;
+  margin-top: auto;
+}
+.blog__caption {
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-block: 24px 12px;
+}
+.blog__more {
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 32px;
+  border-block: 1px solid var(--color-gray);
+  display: block;
+}
+.blog__more:hover {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-color: var(--color-black);
+}
+
+@media (max-width: 991.5px) {
+  .blog {
+    padding-bottom: 60px;
+  }
+  .blog .h1 {
+    text-align: center;
+    padding: 24px 12px;
+  }
+  .blog__filters:not(.open) .blog__filter-toggle svg {
+    transform: scaleY(-1);
+  }
+  .blog__filter-toggle svg {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+  .blog__filter-list li {
+    flex: 1 1 40%;
+  }
+  .blog__filter-list a {
+    font-size: 20px;
+    padding-block: 16px;
+  }
+  .blog__filter-list a:hover, .blog__filter-list a.active {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+  }
+  .blog__list {
+    padding: 32px 24px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+  }
+  .blog__more {
+    font-size: 20px;
+    padding-block: 16px;
+  }
+}
+@media (max-width: 767.5px) {
+  .blog__filters {
+    position: relative;
+  }
+  .blog__filter-toggle {
+    width: 100%;
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--color-white);
+    padding: 16px 12px;
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .blog__filter-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 4;
+  }
+  .blog__filter-list a {
+    background-color: var(--color-white);
+  }
+  .blog__list {
+    grid-template-columns: 100%;
+  }
+}

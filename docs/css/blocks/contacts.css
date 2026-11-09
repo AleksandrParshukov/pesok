@@ -1,0 +1,95 @@
+.contacts {
+  padding-bottom: 110px;
+  margin-top: 32px;
+  position: relative;
+}
+.contacts__container {
+  border-block: 1px solid var(--color-gray);
+  display: flex;
+}
+.contacts__content {
+  padding: 32px;
+  border-right: 1px solid var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+.contacts__content .h1 {
+  color: var(--color-black);
+  margin-bottom: auto;
+}
+.contacts__link {
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contacts__link svg {
+  flex-shrink: 0;
+}
+.contacts a.contacts__link:hover {
+  color: var(--color-green);
+}
+.contacts__map {
+  width: 100%;
+  max-width: 936px;
+  padding: 32px;
+}
+.contacts__map > div {
+  width: 100%;
+  height: 280px;
+  border-radius: 0 12px 12px 12px;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/index/clip-path/map-top-left.svg") top left/55px 60px no-repeat;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.contacts__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 991.5px) {
+  .contacts {
+    padding-bottom: 60px;
+  }
+  .contacts .title-out {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .contacts__container {
+    flex-direction: column;
+  }
+  .contacts__content {
+    padding-inline: 24px;
+    border-bottom: 1px solid var(--color-gray);
+    border-right: none;
+    align-items: center;
+    gap: 12px;
+  }
+  .contacts__content .h1 {
+    margin-bottom: 48px;
+  }
+  .contacts__link {
+    text-align: center;
+    display: inline-flex;
+  }
+  .contacts__link span {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .contacts .btn {
+    width: 100%;
+    max-width: 360px;
+  }
+  .contacts__map {
+    padding-inline: 24px;
+  }
+  .contacts__map > div {
+    height: 160px;
+    -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/index/clip-path/map-top-left-sm.svg") top left/25px 25px no-repeat;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+}

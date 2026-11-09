@@ -1,0 +1,109 @@
+.faq {
+  padding-bottom: 110px;
+  margin-top: 32px;
+  position: relative;
+}
+.faq::after {
+  content: "";
+  width: 215px;
+  height: 31px;
+  background: url("/img/rent/faq-top-right.svg") no-repeat center/contain;
+  position: absolute;
+  bottom: anchor(top --faq-wrapper);
+  right: 0;
+}
+.faq .wrapper {
+  padding-block: 100px;
+  background-color: var(--color-black);
+  anchor-name: --faq-wrapper;
+}
+.faq__list {
+  margin-top: 60px;
+}
+.faq__item {
+  color: var(--color-white);
+  padding: 32px;
+  border-bottom: 1px solid var(--color-white);
+  border-inline: 1px solid var(--color-white);
+  position: relative;
+  transition: all 0.3s ease;
+}
+.faq__item::before {
+  content: "";
+  background: linear-gradient(90deg, #70be44 0%, #59a346 100%);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.faq__item:first-child {
+  border-top: 1px solid var(--color-white);
+}
+.faq__item:not(.active) .opened {
+  display: none;
+}
+.faq__item.active::before {
+  opacity: 1;
+}
+.faq__item.active .closed {
+  display: none;
+}
+.faq__item > div {
+  isolation: isolate;
+}
+.faq__toggle {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.faq__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.faq__question {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.faq__answer {
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-top: 32px;
+  display: none;
+}
+.faq__icon {
+  color: var(--color-white);
+  width: 44px;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  border: 1px solid currentColor;
+  display: grid;
+  place-content: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 991.5px) {
+  .faq {
+    padding-bottom: 60px;
+  }
+  .faq::after {
+    right: -100px;
+  }
+  .faq .wrapper {
+    padding-block: 30px 60px;
+  }
+  .faq__top {
+    align-items: start;
+  }
+  .faq__question {
+    font-size: 20px;
+  }
+  .faq__answer {
+    padding-top: 12px;
+  }
+}

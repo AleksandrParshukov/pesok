@@ -1,0 +1,202 @@
+@import '../_global/variables.scss';
+
+.blog {
+  padding-bottom: 110px;
+  margin-top: 32px;
+  position: relative;
+
+  .h1 {
+    color: var(--color-black);
+    padding: 32px;
+    border-block: 1px solid var(--color-gray);
+  }
+
+  &__filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--color-gray);
+
+    li {
+      height: auto;
+      flex: 1 1 22%;
+    }
+
+    a {
+      font-family: 'Science Gothic', sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      text-align: center;
+      white-space: nowrap;
+      height: 100%;
+      padding: 32px 12px;
+      border-bottom: 1px solid var(--color-gray);
+      border-right: 1px solid var(--color-gray);
+      display: grid;
+      place-content: center;
+      position: relative;
+
+      &:hover,
+      &.active {
+        color: var(--color-white);
+        background-color: var(--color-black);
+        z-index: 1;
+      }
+    }
+  }
+
+  &__list {
+    padding: 60px 32px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 60px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 236px;
+      object-fit: cover;
+      border-radius: 0 12px 0 12px;
+      -webkit-mask:
+        linear-gradient(var(--color-white) 0 0),
+        url('/img/clip-path/blog-top-left.svg') top left / 35px 45px no-repeat,
+        url('/img/clip-path/blog-bot-right.svg') bottom right / 35px 45px no-repeat;
+      mask-composite: exclude;
+    }
+
+    .btn {
+      width: 100%;
+      margin-top: auto;
+    }
+  }
+
+  &__caption {
+    font-family: 'Science Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-block: 24px 12px;
+  }
+
+  &__more {
+    font-family: 'Science Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 32px;
+    border-block: 1px solid var(--color-gray);
+    display: block;
+
+    &:hover {
+      color: var(--color-white);
+      background-color: var(--color-black);
+      border-color: var(--color-black);
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .blog {
+    padding-bottom: 60px;
+
+    .h1 {
+      text-align: center;
+      padding: 24px 12px;
+    }
+
+    &__filters {
+      &:not(.open) {
+        .blog__filter-toggle svg {
+          transform: scaleY(-1);
+        }
+      }
+    }
+
+    &__filter-toggle {
+      svg {
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    &__filter-list {
+      li {
+        flex: 1 1 40%;
+      }
+
+      a {
+        font-size: 20px;
+        padding-block: 16px;
+
+        &:hover,
+        &.active {
+          color: var(--color-white);
+          background-color: var(--color-black);
+          border-color: var(--color-black);
+        }
+      }
+    }
+
+    &__list {
+      padding: 32px 24px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 32px;
+    }
+
+    &__more {
+      font-size: 20px;
+      padding-block: 16px;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .blog {
+    &__filters {
+      position: relative;
+    }
+
+    &__filter-toggle {
+      width: 100%;
+      font-family: 'Science Gothic', sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: var(--color-white);
+      padding: 16px 12px;
+      background-color: var(--color-black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    &__filter-list {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 4;
+
+      a {
+        background-color: var(--color-white);
+      }
+    }
+
+    &__list {
+      grid-template-columns: 100%;
+    }
+  }
+}

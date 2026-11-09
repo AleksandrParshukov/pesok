@@ -1,0 +1,214 @@
+@import './blocks/banner.css';
+@import './blocks/booking.css';
+.schedule {
+  padding-bottom: 110px;
+  margin-top: 32px;
+  position: relative;
+}
+.schedule .h1 {
+  font-size: 32px;
+  color: var(--color-black);
+  padding: 32px;
+}
+.schedule__direction {
+  display: flex;
+}
+.schedule__direction li {
+  height: auto;
+  flex: 1;
+}
+.schedule__direction a {
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  height: 100%;
+  padding: 32px clamp(12px, 2vw, 32px);
+  border-block: 1px solid var(--color-gray);
+  border-right: 1px solid var(--color-gray);
+  display: grid;
+  place-content: center;
+}
+.schedule__direction a.active {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+.schedule .table-outer {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+.schedule .table-inner {
+  min-width: 100%;
+  width: -moz-max-content;
+  width: max-content;
+}
+.schedule__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.schedule__table th {
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  table-layout: fixed;
+  color: var(--color-white);
+  padding-block: 32px;
+  background-color: var(--color-primary);
+  border-bottom: 1px solid rgba(254, 254, 254, 0.18);
+  border-right: 1px solid rgba(254, 254, 254, 0.18);
+}
+.schedule__table td {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: top;
+  min-width: 180px;
+  width: 12.5%;
+  padding-block: 32px;
+  padding-inline: 8px;
+  border-bottom: 1px solid rgba(31, 30, 32, 0.18);
+  border-right: 1px solid rgba(31, 30, 32, 0.18);
+}
+.schedule__table td p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.schedule__table .time {
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.schedule .busy,
+.schedule .avilable {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--color-black);
+  border-radius: 2px;
+}
+.schedule .busy {
+  background-color: var(--color-black);
+}
+.schedule__legend {
+  padding: 32px;
+  background-color: var(--color-yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.schedule__legend p {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 991.5px) {
+  .schedule {
+    padding-bottom: 60px;
+  }
+  .schedule .h1 {
+    font-size: 28px;
+    text-align: center;
+    padding: 12px 24px;
+  }
+  .schedule__direction {
+    flex-direction: column;
+  }
+  .schedule__direction li:first-child a {
+    border-top: 1px solid var(--color-gray);
+  }
+  .schedule__direction a {
+    font-size: 20px;
+    padding-block: 16px;
+    border-bottom: 1px solid var(--color-gray);
+    border-top: none;
+    border-right: none;
+  }
+  .schedule__table th {
+    font-size: 18px;
+    padding-block: 25px;
+  }
+  .schedule__table td {
+    font-size: 13px;
+    min-width: 120px;
+    padding-block: 24px;
+  }
+  .schedule__table .time {
+    font-size: 16px;
+  }
+  .schedule__legend {
+    padding: 16px;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+.banner {
+  padding-bottom: 110px !important;
+}
+.banner__wrapper {
+  background-image: url("../img/schedule/banner.png");
+}
+.banner__content {
+  max-width: 766px;
+  background: linear-gradient(180deg, #2162ae 0%, #004ba2 100%);
+}
+.banner__content .h1 {
+  color: var(--color-yellow);
+}
+.banner__text {
+  color: var(--color-white);
+}
+
+.breadcrumbs {
+  color: var(--color-white);
+}
+
+.about .wrapper {
+  background: linear-gradient(180deg, #59a346 0%, #70be44 100%);
+}
+.about__list {
+  margin-top: 60px;
+}
+.about__list .card {
+  --bg-color: transparent;
+}
+.about__list .card:nth-child(-n+3) {
+  flex: 1 1 30%;
+}
+.about__list .card:nth-child(n+4) {
+  flex: 1 1 40%;
+}
+
+@media (max-width: 991.5px) {
+  .banner {
+    padding-bottom: 60px !important;
+  }
+}
+@media (max-width: 767.5px) {
+  .about .card:last-child {
+    grid-column: span 2;
+  }
+  .about .card__content {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}

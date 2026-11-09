@@ -1,0 +1,135 @@
+@import '../_global/variables.scss';
+
+.faq {
+  padding-bottom: 110px;
+  margin-top: 32px;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 215px;
+    height: 31px;
+    background: url('/img/rent/faq-top-right.svg') no-repeat center / contain;
+    position: absolute;
+    bottom: anchor(top --faq-wrapper);
+    right: 0;
+  }
+
+  .wrapper {
+    padding-block: 100px;
+    background-color: var(--color-black);
+    anchor-name: --faq-wrapper;
+  }
+
+  &__list {
+    margin-top: 60px;
+  }
+
+  &__item {
+    color: var(--color-white);
+    padding: 32px;
+    border-bottom: 1px solid var(--color-white);
+    border-inline: 1px solid var(--color-white);
+    position: relative;
+    transition: all 0.3s ease;
+
+    &::before {
+      content: '';
+      background: linear-gradient(90deg, #70be44 0%, #59a346 100%);
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:first-child {
+      border-top: 1px solid var(--color-white);
+    }
+
+    &:not(.active) {
+      .opened {
+        display: none;
+      }
+    }
+
+    &.active {
+      &::before {
+        opacity: 1;
+      }
+
+      .closed {
+        display: none;
+      }
+    }
+
+    > div {
+      isolation: isolate;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  &__question {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__answer {
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-top: 32px;
+    display: none;
+  }
+
+  &__icon {
+    color: var(--color-white);
+    width: 44px;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    border: 1px solid currentColor;
+    display: grid;
+    place-content: center;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: $ssm) {
+  .faq {
+    padding-bottom: 60px;
+
+    &::after {
+      right: -100px;
+    }
+
+    .wrapper {
+      padding-block: 30px 60px;
+    }
+
+    &__top {
+      align-items: start;
+    }
+
+    &__question {
+      font-size: 20px;
+    }
+
+    &__answer {
+      padding-top: 12px;
+    }
+  }
+}

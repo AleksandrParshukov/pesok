@@ -1,0 +1,140 @@
+@import '../_global/variables.scss';
+
+.pricelist {
+  padding-bottom: 110px;
+  margin-top: 32px;
+  position: relative;
+
+  .h1 {
+    color: var(--color-black);
+  }
+
+  &__item {
+    border-bottom: 1px solid var(--color-gray);
+  }
+
+  &__top {
+    width: 100%;
+    padding: 32px;
+    border-block: 1px solid var(--color-gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__content {
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    align-items: end;
+    gap: 60px;
+  }
+
+  &__desc {
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    ul {
+      font-weight: 500;
+      list-style: outside;
+      margin-top: 0.5em;
+    }
+
+    .btn {
+      margin-top: 24px;
+    }
+  }
+
+  &__condition {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    max-width: 422px;
+  }
+
+  &__bonuses {
+    margin-top: 140px;
+    display: flex;
+
+    li {
+      font-family: 'Science Gothic', sans-serif;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      padding: 32px;
+      border-block: 1px solid var(--color-gray);
+      display: flex;
+      align-items: center;
+      flex: 1;
+
+      &.caption {
+        color: var(--color-white);
+        background: linear-gradient(180deg, #70be44 0%, #59a346 100%);
+      }
+
+      &:last-child {
+        border-left: 1px solid var(--color-gray);
+      }
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .pricelist {
+    padding-bottom: 60px;
+
+    &__top {
+      padding: 12px 24px;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    &__content {
+      padding: 12px 24px;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    &__desc {
+      font-size: 15px;
+
+      .btn {
+        width: 100%;
+        max-width: 360px;
+        margin-inline: auto;
+      }
+    }
+
+    &__condition {
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    &__bonuses {
+      margin-top: 60px;
+      flex-direction: column;
+
+      li {
+        font-size: 20px;
+        text-align: center;
+        padding: 16px 24px;
+        border-top: none;
+        border-bottom: 1px solid var(--color-gray);
+        justify-content: center;
+
+        &.caption {
+          border-block: none;
+        }
+
+        &:last-child {
+          border-left: 1px solid var(--color-gray);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import '../_global/variables.scss';
+
+.docs {
+  padding-bottom: 110px;
+  position: relative;
+
+  .wrapper {
+    padding-block: 100px;
+    background-image: url('/img/index/docs-top-right.svg'), linear-gradient(180deg, #59a346 0%, #70be44 100%);
+    background-repeat: no-repeat;
+    background-position:
+      top right,
+      center;
+    -webkit-mask:
+      linear-gradient(var(--color-white) 0 0),
+      url('/img/clip-path/section-bot-left.svg') bottom left / 230px 37px no-repeat;
+    mask-composite: exclude;
+  }
+
+  &__list {
+    margin-top: 60px;
+    display: flex;
+    gap: 60px;
+  }
+
+  &__item {
+    color: var(--color-white);
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: end;
+    gap: 24px 12px;
+    flex: 1;
+
+    .btn {
+      height: min-content;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 236px;
+    object-fit: cover;
+    border-radius: 12px 12px 12px 0;
+    grid-column: span 2;
+    -webkit-mask:
+      linear-gradient(var(--color-white) 0 0),
+      url('/img/index/clip-path/docs-bot-left.svg') bottom left / 50px 50px no-repeat;
+    mask-composite: exclude;
+  }
+
+  &__name {
+    font-family: 'Science Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    grid-column: span 2;
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: $ssm) {
+  .docs {
+    padding-bottom: 60px;
+    position: relative;
+
+    .wrapper {
+      padding-block: 60px;
+      background-position:
+        top -18px right -30px,
+        center;
+      -webkit-mask:
+        linear-gradient(var(--color-white) 0 0),
+        url('/img/clip-path/section-bot-left-sm.svg') bottom left / 100px 30px no-repeat;
+      mask-composite: exclude;
+
+      .h1 {
+        text-align: center;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+
+      .btn {
+        width: 100%;
+        max-width: 360px;
+      }
+    }
+
+    &__img {
+      height: 118px;
+      -webkit-mask:
+        linear-gradient(var(--color-white) 0 0),
+        url('/img/index/clip-path/docs-bot-left-sm.svg') bottom left / 24px 24px no-repeat;
+      mask-composite: exclude;
+    }
+
+    &__name {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    &__desc {
+      text-align: center;
+    }
+  }
+}

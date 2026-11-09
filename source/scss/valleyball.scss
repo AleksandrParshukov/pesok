@@ -1,0 +1,72 @@
+@import './blocks/banner.css';
+@import './blocks/info.css';
+@import './blocks/description.css';
+@import './blocks/about.css';
+@import './blocks/gallery.css';
+@import './blocks/condition.css';
+@import './blocks/booking.css';
+
+@import '_global/variables.scss';
+
+.banner {
+  &__wrapper {
+    background-image: url('../img/rent/banner.png');
+  }
+
+  &__content {
+    background: linear-gradient(180deg, #70be44 0%, #59a346 100%);
+
+    .h1 {
+      color: var(--color-yellow);
+    }
+  }
+
+  &__text {
+    color: var(--color-white);
+  }
+}
+
+.breadcrumbs {
+  color: var(--color-white);
+}
+
+.about {
+  .wrapper {
+     background: linear-gradient(180deg, #59a346 0%, #70be44 100%);
+  }
+
+  &__list {
+    margin-top: 60px;
+
+    .card {
+      --bg-color: transparent;
+
+      &:nth-child(-n + 3) {
+        flex: 1 1 30%;
+      }
+
+      &:nth-child(n + 4) {
+        flex: 1 1 40%;
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .about {
+    .card {
+      &:last-child {
+        grid-column: span 2;
+      }
+
+      &__content {
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+.footer {
+  --padding-inline: clamp(150px, 21vw, 316px) 100px;
+  background-color: var(--color-black);
+
+  &__top {
+    padding-block: 80px 40px;
+    padding-inline: var(--padding-inline);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__caption {
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgba(254, 254, 254, 0.8);
+    margin-bottom: 80px;
+  }
+
+  &__menu {
+    max-width: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    a {
+      font-weight: 400;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: var(--color-white);
+
+      &:hover {
+        color: var(--color-green);
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-white);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    &:hover {
+      color: var(--color-green);
+    }
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: rgba(254, 254, 254, 0.8);
+    margin-bottom: 8px;
+  }
+
+  &__phone {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-white);
+    margin-top: 16px;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    padding: 10px 48px 8px;
+
+    &:hover {
+      color: var(--color-green);
+    }
+  }
+
+  &__bottom {
+    padding-block: 36px 50px;
+    padding-inline: var(--padding-inline);
+    border-top: 1px solid var(--color-gray);
+    display: flex;
+    gap: 32px;
+
+    .footer__link {
+      font-size: 14px;
+    }
+  }
+
+  &__dev {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-white);
+    margin-left: auto;
+  }
+}
+
+@media (max-width: $ssm) {
+  .footer {
+    --padding-inline: clamp(50px, 10vw, 100px);
+  }
+}
+
+@media (max-width: $ssm) {
+  .footer {
+    --padding-inline: 24px;
+
+    &__top {
+      padding-block: 60px 32px;
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+    }
+
+    &__block {
+      align-items: center;
+    }
+
+    &__caption {
+      margin-bottom: 32px;
+    }
+
+    &__menu {
+      max-width: 400px;
+      justify-content: center;
+    }
+
+    &__socials {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+    }
+
+    &__phone {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    &__bottom {
+      padding-block: 32px;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &__dev {
+      margin-left: 0;
+    }
+  }
+}

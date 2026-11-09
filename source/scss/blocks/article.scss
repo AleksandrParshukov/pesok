@@ -1,0 +1,99 @@
+@import '../_global/variables.scss';
+
+.article {
+  padding: 120px 80px 140px;
+
+  &__desc {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    p {
+      margin-top: 1em;
+    }
+
+    h1,
+    h2 {
+      font-family: 'Science Gothic', sans-serif;
+      font-weight: 500;
+      font-size: 52px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+
+      &:not(:first-child) {
+        margin-top: 60px;
+      }
+    }
+
+    h3 {
+      font-family: 'Science Gothic', sans-serif;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+
+    ul {
+      font-size: 16px;
+      list-style: none;
+
+      li {
+        &::before {
+          content: '';
+          width: 12px;
+          height: 12px;
+          margin-bottom: -1px;
+          margin-right: 8px;
+          background-color: var(--color-black);
+          border: 1px solid var(--color-black);
+          border-radius: 2px;
+          display: inline-block;
+        }
+      }
+    }
+
+    blockquote {
+      font-size: 20px;
+      color: var(--color-white);
+      padding: 60px 80px;
+      margin-bottom: 0;
+      margin-inline: -80px;
+      background-color: var(--color-green);
+
+      &:not(:first-child) {
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .article {
+    padding: 60px 24px;
+
+    &__desc {
+      font-size: 16px;
+      h1,
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+
+      ul {
+        font-size: 15px;
+        list-style: none;
+      }
+
+      blockquote {
+        font-size: 16px;
+        padding: 32px 24px;
+        margin-inline: -24px;
+      }
+    }
+  }
+}

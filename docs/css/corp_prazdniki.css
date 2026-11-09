@@ -1,0 +1,59 @@
+@import './blocks/banner.css';
+@import './blocks/info.css';
+@import './blocks/description.css';
+@import './blocks/about.css';
+@import './blocks/gallery.css';
+@import './blocks/faq.css';
+@import './blocks/booking.css';
+@import './blocks/condition.css';
+.banner__wrapper {
+  background-image: url("../img/corp_prazdniki/banner.png");
+}
+.banner__content {
+  background: linear-gradient(180deg, #2162ae 0%, #004ba2 100%);
+}
+.banner__content .h1 {
+  color: var(--color-yellow);
+}
+.banner__text {
+  color: var(--color-white);
+}
+.banner .btn-more:hover {
+  color: var(--color-yellow);
+}
+
+.breadcrumbs {
+  color: var(--color-white);
+}
+
+.about {
+  color: var(--color-primary);
+}
+.about .h1 {
+  color: var(--color-primary);
+}
+.about .wrapper {
+  background: linear-gradient(360deg, #ffd303 0%, #fb0 100%);
+}
+.about__list {
+  margin-top: 60px;
+}
+.about__list .card {
+  --bg-color: transparent;
+  --border-color: var(--color-primary);
+  flex: 1 1 40%;
+}
+.about__value, .about__name {
+  color: var(--color-primary);
+}
+
+@media (max-width: 767.5px) {
+  .about .card__content {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}

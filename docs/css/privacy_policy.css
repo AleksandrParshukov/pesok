@@ -1,0 +1,45 @@
+@import './blocks/banner.css';
+@import './blocks/article.css';
+@import './blocks/callback.css';
+.banner {
+  padding-bottom: 0;
+}
+.banner__wrapper {
+  background-image: url("/img/docs-icon.svg"), linear-gradient(135deg, #70be44 0%, #59a346 100%);
+  background-position: center right 14px, center;
+  background-repeat: no-repeat;
+  background-size: 419px, auto;
+  display: flex;
+}
+.banner__content {
+  max-width: none;
+  padding-block: 60px;
+  margin-block: auto;
+  background: transparent;
+}
+.banner__content .h1 {
+  color: var(--color-white);
+}
+.banner__content .btn-more:hover {
+  color: var(--color-primary);
+}
+.banner__socials {
+  margin-top: 44px;
+  justify-content: start;
+}
+.banner__text {
+  color: var(--color-white);
+}
+
+.breadcrumbs {
+  color: var(--color-white);
+}
+
+@media (max-width: 991.5px) {
+  .banner__wrapper {
+    padding-top: 100px;
+    background-position: top -14px right -39px, center;
+    background-repeat: no-repeat;
+    background-size: 227px, auto;
+  }
+}

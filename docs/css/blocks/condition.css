@@ -1,0 +1,97 @@
+.condition {
+  padding-bottom: 110px;
+  margin-top: 32px;
+  position: relative;
+}
+.condition .h1 {
+  color: var(--color-black);
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.condition__item {
+  min-height: 280px;
+  display: flex;
+  border-bottom: 1px solid var(--color-gray);
+}
+.condition__item:first-child {
+  border-top: 1px solid var(--color-gray);
+}
+.condition__item.reverse {
+  flex-direction: row-reverse;
+}
+.condition__item.reverse .h1 {
+  text-align: end;
+}
+.condition__item.reverse .condition__content {
+  text-align: left;
+  border-right: 1px solid var(--color-gray);
+  align-items: start;
+}
+.condition__content {
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 32px;
+  border-left: 1px solid var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  gap: 24px;
+  flex: 1;
+}
+.condition__links {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 1.1vw, 16px);
+}
+
+@media (max-width: 991.5px) {
+  .condition {
+    padding-bottom: 60px;
+  }
+  .condition .h1 {
+    color: var(--color-black);
+    padding: 12px 24px;
+    border-bottom: 1px solid var(--color-gray);
+  }
+  .condition__item {
+    min-height: 0;
+    height: -moz-min-content;
+    height: min-content;
+    flex-direction: column;
+  }
+  .condition__item:first-child {
+    border-top: 1px solid var(--color-gray);
+  }
+  .condition__item.reverse {
+    flex-direction: column;
+  }
+  .condition__item.reverse .h1 {
+    text-align: end;
+    justify-content: end;
+  }
+  .condition__item.reverse .condition__content {
+    text-align: end;
+    border-right: 1px solid var(--color-gray);
+    align-items: end;
+  }
+  .condition__content {
+    text-align: start;
+    padding: 32px 24px;
+    gap: 16px;
+  }
+  .condition__links {
+    width: 100%;
+    flex-direction: column;
+    gap: clamp(12px, 1.1vw, 16px);
+  }
+  .condition__links .btn {
+    width: 100%;
+    max-width: 360px;
+    align-items: start;
+  }
+}

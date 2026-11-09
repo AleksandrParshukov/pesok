@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Стили страницы -->
+    
+    <link rel="stylesheet" href="/css/corp_prazdniki.css" /> 
+    <title>Песок</title>
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <a href="/" class="header__logo">
+          <img src="./img/logo-1.png" height="36" alt="">
+          <img src="./img/logo-2.png" height="36" alt="">
+        </a>
+
+        <div class="header__menu">
+          <button type="button" class="header__toggle to-lg js_menu_open">
+            <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0.750326L24 0.75M0 6.75016H24M0 12.75H24" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <nav class="main-nav">
+            <div class="main-nav__content">
+              <div class="main-nav__header to-lg">
+                <a href="/" class="main-nav__logo">
+                  <img src="./img/logo-1.png" height="36" alt="">
+                  <img src="./img/logo-2.png" height="36" alt="">
+                </a>
+                <button class="main-nav__close js_menu_close">
+                  <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 7L24 21M24 7L8 21" stroke="#010101" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </button>
+              </div>
+
+              <ul class="main-nav__list">
+                <li><a href="/sport.html" class="main-nav__link">Спорт</a></li>
+                <li><a href="/event.html" class="main-nav__link">Ивент</a></li>
+                <li><a href="equipment.html" class="main-nav__link">цены</a></li>
+                <li><a href="equipment.html" class="main-nav__link">Кейсы</a></li>
+                <li><a href="equipment.html" class="main-nav__link">блог</a></li>
+                <li><a href="equipment.html" class="main-nav__link">контакты</a></li>
+                <li><a href="equipment.html" class="main-nav__link">о нас</a></li>
+                <li><a href="equipment.html" class="main-nav__link">документы</a></li>
+              </ul>
+              <a href="#" class="btn">Записаться онлайн</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="card-left">
+    <path fill="var(--bg-color)" stroke="var(--border-color)" stroke-width="var(--border-size)" d="M32.666 0.5H326.667C333.018 0.5 338.167 5.64873 338.167 12V193.47C338.167 195.667 337.537 197.819 336.353 199.67L316.807 230.2C314.693 233.502 311.042 235.5 307.121 235.5H12.667C6.31572 235.5 1.16699 230.351 1.16699 224V38.7334C1.16707 36.2501 1.97143 33.8332 3.45898 31.8447L23.458 5.11133C25.6292 2.20904 29.0415 0.500067 32.666 0.5Z" />
+  </symbol>
+  <symbol id="card-right">
+    <path fill="var(--bg-color)" stroke="var(--border-color)" stroke-width="var(--border-size)" d="M-271.001 0.5H23C29.3513 0.5 34.5 5.64873 34.5 12V193.47C34.5 195.667 33.8704 197.819 32.6855 199.67L13.1396 230.2C11.0257 233.502 7.37479 235.5 3.4541 235.5H-291C-297.351 235.5 -302.5 230.351 -302.5 224V38.7334C-302.5 36.2501 -301.696 33.8332 -300.208 31.8447L-280.209 5.11133C-278.038 2.20904 -274.626 0.500067 -271.001 0.5Z" />
+  </symbol>
+  <symbol id="card-left-sm">
+    <path fill="var(--bg-color)" stroke="var(--border-color)" stroke-width="var(--border-size)" d="M 21.9033,0.5 H 170.091 C 173.354,0.500025 176,3.14564 176,6.40918 V 158.733 c 0,1.493 -0.291,2.971 -0.855,4.352 l -9.103,22.267 c -1.767,4.323 -5.974,7.148 -10.645,7.148 H 12 C 5.64873,192.5 0.5,187.351 0.5,181 V 31.3096 c 10e-6,-1.8252 0.434674,-3.6241 1.26758,-5.2481 L 11.6709,6.75195 C 13.6394,2.9139 17.5899,0.500043 21.9033,0.5 Z" />
+  </symbol>
+  <symbol id="card-right-sm">
+    <path fill="var(--bg-color)" stroke="var(--border-color)" stroke-width="var(--border-size)" d="M-130.128 0.5H17.6094C20.8626 0.500243 23.4998 3.13743 23.5 6.39062V158.739C23.5 160.228 23.2112 161.702 22.6494 163.08L13.5752 185.341C11.8105 189.67 7.60067 192.5 2.92578 192.5H-140C-146.351 192.5 -151.5 187.351 -151.5 181V31.3027C-151.5 29.4821 -151.067 27.6874 -150.238 26.0664L-140.367 6.76367C-138.401 2.91906 -134.446 0.5 -130.128 0.5Z" />
+  </symbol>
+  <symbol id="card-center">
+    <rect x="0" y="0.5" width="10" height="235" fill="var(--bg-color)"></rect>
+    <line x1="0" y1="0.5" x2="10" y2="0.5" stroke="var(--border-color)" stroke-width="var(--border-size)"></line>
+    <line x1="0" y1="235.5" x2="10" y2="235.5" stroke="var(--border-color)" stroke-width="var(--border-size)"></line>
+  </symbol>
+</svg>
+
+
+<section class="banner top-section">
+  <div class="wrapper">
+    <div class="banner__wrapper">
+      <div class="banner__content">
+        <ol class="breadcrumbs">
+          <li><a href="/">Главная</a></li>
+          <li>
+            <p>Корпоративные праздники</p>
+          </li>
+        </ol>
+
+        <h1 class="h1">
+          Корпоративные праздники
+        </h1>
+        <p class="banner__text">
+          Проведите корпоратив, тимбилдинг, вечеринку или спортивный праздник в необычном пляжном формате — с программой, кейтерингом, активностями и пространством для команды.
+        </p>
+        <div class="banner__controls">
+          <a href="#" class="btn btn-yellow">Забронировать</a>
+          <a href="#" class="btn btn-outline-yellow">скачать презентацию</a>
+        </div>
+        <div class="banner__socials">
+          <a href="#" class="btn-more">
+            <span>VK</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="btn-more">
+            <span>Telegram</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="btn-more">
+            <span>MAX</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="btn-more">
+            <span>RuTube</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <ul class="info__list">
+    <li class="info__item">
+      <p class="info__caption">до 200 гостей</p>
+      <p class="info__text">для крупных событий</p>
+    </li>
+    <li class="info__item">
+      <p class="info__caption">8 площадок</p>
+      <p class="info__text">для игр и активностей</p>
+    </li>
+    <li class="info__item">
+      <p class="info__caption">кейтеринг</p>
+      <p class="info__text">фуршеты, кофе-брейки, банкеты</p>
+    </li>
+    <li class="info__item">
+      <p class="info__caption">спорт + праздник</p>
+      <p class="info__text">в одном формате</p>
+    </li>
+  </ul>
+</section>
+
+<section class="description">
+  <h2 class="title-out">[ Описание ]</h2>
+  <div class="description__wrapper">
+    <p class="h1">Корпоратив, который не похож на обычный банкет</p>
+    <div class="description__img">
+      <img src="/img/corp_prazdniki/desc.png" width="400" height="400" alt="">
+    </div>
+    <div class="description__content">
+      <div class="description__text desc">
+        <p>В «Песке» можно провести корпоративный праздник, тимбилдинг, спортивный турнир, новогоднюю вечеринку, день компании или неформальную встречу команды. Пространство легко адаптируется под формат события: можно устроить активную программу на песке, добавить фуршет, ведущего, награждение, фотозону и зону отдыха.</p>
+        <p>Пляжная атмосфера помогает гостям быстрее включиться в событие: люди не просто сидят за столом, а играют, двигаются, общаются и получают общий эмоциональный опыт.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2 class="title-out">[ что входит в организацию ]</h2>
+  <div class="wrapper">
+    <p class="h1">Мы поможем собрать событие под ключ</p>
+
+    <ul class="about__list">
+      <li class="card">
+        <div class="card__bg">
+          <svg class="card__left from-sm" viewBox="0 0 35 236">
+            <use href="#card-left"></use>
+          </svg>
+          <svg class="card__left to-sm" viewBox="0 0 24 193">
+            <use href="#card-left-sm"></use>
+          </svg>
+
+          <svg class="card__center" viewBox="0 0 10 236" preserveAspectRatio="none">
+            <use href="#card-center"></use>
+          </svg>
+
+          <svg class="card__right from-sm" viewBox="0 0 35 236">
+            <use href="#card-right"></use>
+          </svg>
+          <svg class="card__right to-sm" viewBox="0 0 24 193">
+            <use href="#card-right-sm"></use>
+          </svg>
+        </div>
+
+        <div class="card__content">
+          <p class="about__value">Площадка и песок</p>
+          <p class="about__name">8 площадок и пляжная атмосфера в любое время года.</p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card__bg">
+          <svg class="card__left from-sm" viewBox="0 0 35 236">
+            <use href="#card-left"></use>
+          </svg>
+          <svg class="card__left to-sm" viewBox="0 0 24 193">
+            <use href="#card-left-sm"></use>
+          </svg>
+
+          <svg class="card__center" viewBox="0 0 10 236" preserveAspectRatio="none">
+            <use href="#card-center"></use>
+          </svg>
+
+          <svg class="card__right from-sm" viewBox="0 0 35 236">
+            <use href="#card-right"></use>
+          </svg>
+          <svg class="card__right to-sm" viewBox="0 0 24 193">
+            <use href="#card-right-sm"></use>
+          </svg>
+        </div>
+
+        <div class="card__content">
+          <p class="about__value">Программа события</p>
+          <p class="about__name">Спортивная, развлекательная или смешанная программа под задачу команды.</p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card__bg">
+          <svg class="card__left from-sm" viewBox="0 0 35 236">
+            <use href="#card-left"></use>
+          </svg>
+          <svg class="card__left to-sm" viewBox="0 0 24 193">
+            <use href="#card-left-sm"></use>
+          </svg>
+
+          <svg class="card__center" viewBox="0 0 10 236" preserveAspectRatio="none">
+            <use href="#card-center"></use>
+          </svg>
+
+          <svg class="card__right from-sm" viewBox="0 0 35 236">
+            <use href="#card-right"></use>
+          </svg>
+          <svg class="card__right to-sm" viewBox="0 0 24 193">
+            <use href="#card-right-sm"></use>
+          </svg>
+        </div>
+
+        <div class="card__content">
+          <p class="about__value">Кейтеринг</p>
+          <p class="about__name">Фуршет, кофе-брейк, банкет, бармен-шоу или лёгкое фитнес-меню.</p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card__bg">
+          <svg class="card__left from-sm" viewBox="0 0 35 236">
+            <use href="#card-left"></use>
+          </svg>
+          <svg class="card__left to-sm" viewBox="0 0 24 193">
+            <use href="#card-left-sm"></use>
+          </svg>
+
+          <svg class="card__center" viewBox="0 0 10 236" preserveAspectRatio="none">
+            <use href="#card-center"></use>
+          </svg>
+
+          <svg class="card__right from-sm" viewBox="0 0 35 236">
+            <use href="#card-right"></use>
+          </svg>
+          <svg class="card__right to-sm" viewBox="0 0 24 193">
+            <use href="#card-right-sm"></use>
+          </svg>
+        </div>
+
+        <div class="card__content">
+          <p class="about__value">Инвентарь и оборудование</p>
+          <p class="about__name">Мячи, сетки, спортивный инвентарь и всё для активностей.</p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card__bg">
+          <svg class="card__left from-sm" viewBox="0 0 35 236">
+            <use href="#card-left"></use>
+          </svg>
+          <svg class="card__left to-sm" viewBox="0 0 24 193">
+            <use href="#card-left-sm"></use>
+          </svg>
+
+          <svg class="card__center" viewBox="0 0 10 236" preserveAspectRatio="none">
+            <use href="#card-center"></use>
+          </svg>
+
+          <svg class="card__right from-sm" viewBox="0 0 35 236">
+            <use href="#card-right"></use>
+          </svg>
+          <svg class="card__right to-sm" viewBox="0 0 24 193">
+            <use href="#card-right-sm"></use>
+          </svg>
+        </div>
+
+        <div class="card__content">
+          <p class="about__value">Комфорт для гостей</p>
+          <p class="about__name">Раздевалки, душевые, зоны отдыха, парковка и удобная навигация.</p>
+        </div>
+      </li>
+      <li class="card">
+        <div class="card__bg">
+          <svg class="card__left from-sm" viewBox="0 0 35 236">
+            <use href="#card-left"></use>
+          </svg>
+          <svg class="card__left to-sm" viewBox="0 0 24 193">
+            <use href="#card-left-sm"></use>
+          </svg>
+
+          <svg class="card__center" viewBox="0 0 10 236" preserveAspectRatio="none">
+            <use href="#card-center"></use>
+          </svg>
+
+          <svg class="card__right from-sm" viewBox="0 0 35 236">
+            <use href="#card-right"></use>
+          </svg>
+          <svg class="card__right to-sm" viewBox="0 0 24 193">
+            <use href="#card-right-sm"></use>
+          </svg>
+        </div>
+
+        <div class="card__content">
+          <p class="about__value">Сопровождение</p>
+          <p class="about__name">Помогаем с форматом, таймингом, программой и расчётом стоимости.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2 class="title-out">[ фотогалерея ]</h2>
+
+  <!-- Я сделал позиционирование кратинок через атрибут style, чтобы сохранить возможность для кастомизации:
+    grid-row и grid-column для десктопа (сетка 3 столбца на 7 строк, по-умолчанию каждый элемент занимает 2 строки)
+    flex-basis для мобилки (по-умолчанию у всех элементов flex-basis: 40%) -->
+  <ul class="gallery__list">
+    <li class="gallery__item"><img src="/img/corp_prazdniki/gallery-1.png" alt=""></li>
+    <li class="gallery__item"><img src="/img/corp_prazdniki/gallery-2.png" alt=""></li>
+    <li class="gallery__item" style="grid-row: span 5; flex-basis: 100%;"><img src="/img/corp_prazdniki/gallery-3.png" alt=""></li>
+    <li class="gallery__item"><img src="/img/corp_prazdniki/gallery-4.png" alt=""></li>
+    <li class="gallery__item" style="grid-row: span 3;"><img src="/img/corp_prazdniki/gallery-5.png" alt=""></li>
+    <li class="gallery__item" style="grid-row: span 3;"><img src="/img/corp_prazdniki/gallery-6.png" alt=""></li>
+    <li class="gallery__item" style="grid-column: span 2;"><img src="/img/corp_prazdniki/gallery-7.png" alt=""></li>
+  </ul>
+</section>
+
+<section class="condition">
+  <h2 class="title-out">[ Формат и условия проведения ]</h2>
+  <ul class="condition__list">
+    <li class="condition__item">
+      <p class="h1">Соберём корпоратив под вашу задачу</p>
+      <div class="condition__content">
+        <p>Площадка подходит для корпоративов, тимбилдингов, турниров, вечеринок и смешанных форматов. Можно добавить спортивную или развлекательную программу, ведущего, тренера, кейтеринг, фотозону, музыку и награждение.</p>
+        <p>Стоимость рассчитывается индивидуально и зависит от количества гостей, даты, длительности аренды, программы и дополнительных услуг.</p>
+        <a href="#" class="btn btn-black">Смотреть цены</a>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="faq">
+  <h2 class="title-out">[ FAQ ]</h2>
+  <div class="wrapper">
+    <p class="h1">Частые вопросы</p>
+
+    <ul class="faq__list js_accordion">
+      <li class="faq__item js_accordion_item">
+        <button class="faq__toggle js_accordion_toggle"></button>
+        <div class="faq__top">
+          <p class="faq__question">Можно ли арендовать площадку без тренера?</p>
+          <div class="faq__icon">
+            <svg class="opened" width="23" height="1" viewBox="0 0 23 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.5 0.5H11.5H0.5" stroke="currentColor" stroke-linecap="round" />
+            </svg>
+            <svg class="closed" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5 0.5V11.5M11.5 22.5V11.5M11.5 11.5H22.5M11.5 11.5H0.5" stroke="currentColor" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="faq__answer desc js_accordion_content">
+          Да, можно забронировать площадку для самостоятельной игры или тренировки.
+        </div>
+      </li>
+      <li class="faq__item js_accordion_item">
+        <button class="faq__toggle js_accordion_toggle"></button>
+        <div class="faq__top">
+          <p class="faq__question">Можно ли арендовать площадку без тренера?</p>
+          <div class="faq__icon">
+            <svg class="opened" width="23" height="1" viewBox="0 0 23 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.5 0.5H11.5H0.5" stroke="currentColor" stroke-linecap="round" />
+            </svg>
+            <svg class="closed" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5 0.5V11.5M11.5 22.5V11.5M11.5 11.5H22.5M11.5 11.5H0.5" stroke="currentColor" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="faq__answer desc js_accordion_content">
+          Да, можно забронировать площадку для самостоятельной игры или тренировки.
+        </div>
+      </li>
+      <li class="faq__item js_accordion_item">
+        <button class="faq__toggle js_accordion_toggle"></button>
+        <div class="faq__top">
+          <p class="faq__question">Можно ли арендовать площадку без тренера?</p>
+          <div class="faq__icon">
+            <svg class="opened" width="23" height="1" viewBox="0 0 23 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.5 0.5H11.5H0.5" stroke="currentColor" stroke-linecap="round" />
+            </svg>
+            <svg class="closed" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5 0.5V11.5M11.5 22.5V11.5M11.5 11.5H22.5M11.5 11.5H0.5" stroke="currentColor" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="faq__answer desc js_accordion_content">
+          Да, можно забронировать площадку для самостоятельной игры или тренировки.
+        </div>
+      </li>
+      <li class="faq__item js_accordion_item">
+        <button class="faq__toggle js_accordion_toggle"></button>
+        <div class="faq__top">
+          <p class="faq__question">Можно ли арендовать площадку без тренера?</p>
+          <div class="faq__icon">
+            <svg class="opened" width="23" height="1" viewBox="0 0 23 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.5 0.5H11.5H0.5" stroke="currentColor" stroke-linecap="round" />
+            </svg>
+            <svg class="closed" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5 0.5V11.5M11.5 22.5V11.5M11.5 11.5H22.5M11.5 11.5H0.5" stroke="currentColor" stroke-linecap="round" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="faq__answer desc js_accordion_content">
+          Да, можно забронировать площадку для самостоятельной игры или тренировки.
+          Да, можно забронировать площадку для самостоятельной игры или тренировки.
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="booking">
+  <h2 class="title-out">[ Обратная связь ]</h2>
+  <div class="wrapper">
+    <p class="h1">Хотите арендовать площадку?</p>
+
+    <form class="booking__form" action="">
+      <input class="booking__input" type="text" placeholder="ВАШЕ ИМЯ:">
+      <input class="booking__input js_phone_input" type="tel" placeholder="НОМЕР ТЕЛЕФОНА:">
+      <select class="js_custom_select" name="" id="" data-placehoder="ВЫБЕРИТЕ ВИД СПОРТА">
+        <option value="valleyball">Волейбол</option>
+        <option value="football">Футбол</option>
+      </select>
+      <textarea class="booking__input" name="" id="" rows="5" placeholder="КОММЕНТАРИЙ:"></textarea>
+
+      <button type="submit" class="btn btn-black">ОТПРАВИТЬ</button>
+      <div class="checkbox">
+        <input type="checkbox" name="" id="booking_policy">
+        <label for="booking_policy">Согласие на обработку персональных данных</label>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__block">
+      <p class="footer__caption">[ навигация ]</p>
+      <ul class="footer__menu">
+        <li><a href="#">Спорт</a></li>
+        <li><a href="#">Ивент</a></li>
+        <li><a href="#">магазин</a></li>
+        <li><a href="#">Кейсы</a></li>
+        <li><a href="#">блог</a></li>
+        <li><a href="#">контакты</a></li>
+        <li><a href="#">о нас</a></li>
+        <li><a href="#">документы</a></li>
+        <li><a href="#">Магазин</a></li>
+      </ul>
+    </div>
+    <div class="footer__block">
+      <p class="footer__caption">[ социальные сети ]</p>
+      <ul class="footer__socials">
+        <li>
+          <a href="#" class="footer__link">
+            <span>VK</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__link">
+            <span>Telegram</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__link">
+            <span>MAX</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__link">
+            <span>RuTube</span>
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.353516 9.5L9.35352 0.5M2.80806 0.5H9.35352V7.04545" stroke="currentColor" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__block">
+      <p class="footer__caption">[ КОНТАКТЫ ]</p>
+      <p class="footer__text">Напишите нам</p>
+      <a href="mailto:info@sportpesok.com" class="footer__link">info@sportpesok.com</a>
+      <a href="tel:+78127791029" class="footer__phone">+7(812) 779-10-29</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <a href="/privacy_policy.html" class="footer__link">Политика конфиденциальности</a>
+    <a href="#" class="footer__link">Публичная оферта</a>
+    <a href="#" class="footer__dev">Сайт разработан веб-студией Хэндрег</a>
+  </div>
+</footer>
+
+<div class="cookie js_cookie">
+  <div class="wrapper">
+    <p>
+      Мы используем куки для наилучшего представления нашего сайта. <br>
+      Если Вы продолжите использовать сайт, мы будем считать что Вас это устраивает.
+    </p>
+    <button type="button" class="btn btn-white js_apply_cookie">Хорошо</button>
+    <a href="/privacy_policy.html" class="btn btn-outline-white">Политика конфиденциальности</a>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/jquery.mask.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+
+</html>

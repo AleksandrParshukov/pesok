@@ -1,0 +1,42 @@
+@import '../_global/variables.scss';
+
+.gallery {
+  padding-bottom: 110px;
+  margin-top: 32px;
+  position: relative;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(7, minmax(0, 118px));
+    grid-auto-flow: dense;
+    gap: 8px;
+  }
+
+  &__item {
+    grid-row: span 2;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .gallery {
+    padding-bottom: 60px;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    &__item {
+      height: 120px;
+      flex: 1 1 40%;
+    }
+  }
+}

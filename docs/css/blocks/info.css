@@ -1,0 +1,59 @@
+.info {
+  padding-bottom: 110px;
+}
+.info__list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.info__item {
+  text-align: center;
+  padding: 28px 12px;
+  border-bottom: 1px solid var(--color-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.info__item:not(:last-child) {
+  border-right: 1px solid var(--color-gray);
+}
+.info__caption {
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.info__text {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1199.5px) {
+  .info__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 767.5px) {
+  .info {
+    padding-bottom: 60px;
+  }
+  .info__list {
+    grid-template-columns: 100%;
+  }
+  .info__item {
+    padding: 12px;
+    gap: 8px;
+  }
+  .info__item:not(:last-child) {
+    border-right: none;
+  }
+  .info__caption {
+    font-size: 24px;
+  }
+  .info__text {
+    font-size: 15px;
+  }
+}

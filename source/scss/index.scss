@@ -1,0 +1,27 @@
+@import './blocks/banner.css';
+@import './blocks/about.css';
+@import './blocks/services.css';
+@import './blocks/trainings.css';
+@import './blocks/cases.css';
+@import './blocks/docs.css';
+@import './blocks/contacts.css';
+@import './blocks/callback.css';
+@import './blocks/pricing.css';
+@import './blocks/brands.css';
+@import './blocks/booking.css';
+
+@import '_global/variables.scss';
+
+@import '_blocks/types.scss';
+@import '_blocks/video.scss';
+@import '_blocks/store.scss';
+
+.banner {
+  &__wrapper {
+    background-image: url('../img/index/banner.png');
+  }
+
+  &__content {
+    background-color: var(--color-primary);
+  }
+}

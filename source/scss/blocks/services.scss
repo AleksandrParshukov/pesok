@@ -1,0 +1,151 @@
+@import '../_global/variables.scss';
+
+.services {
+  --border: 1px solid var(--color-gray);
+  padding-bottom: 110px;
+  margin-top: 32px;
+  position: relative;
+
+  &__item {
+    color: var(--color-black);
+    display: flex;
+    flex-wrap: wrap;
+
+    &:last-child {
+      border-bottom: var(--border);
+    }
+
+    &.reverse {
+      .services__title {
+        text-align: end;
+      }
+
+      .services__content {
+        text-align: right;
+        align-items: end;
+        order: 3;
+      }
+
+      .services__img {
+        border-left: none;
+        border-right: var(--border);
+      }
+    }
+  }
+
+  &__title {
+    color: var(--color-black);
+    width: 100%;
+    padding: 32px;
+    border-top: var(--border);
+    border-bottom: var(--border);
+  }
+
+  &__content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 24px;
+    flex: 1;
+  }
+
+  &__desc {
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    max-width: 700px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: clamp(12px, 1.1vw, 16px);
+  }
+
+  &__img {
+    padding: 18px 32px;
+    border-left: var(--border);
+
+    img {
+      width: 100%;
+      min-height: 236px;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0 12px 0 12px;
+      -webkit-mask:
+        linear-gradient(var(--color-white) 0 0),
+        url('/img/index/clip-path/services-top-left.svg') top left / 48px 44px no-repeat,
+        url('/img/index/clip-path/services-bot-right.svg') bottom right / 48px 44px no-repeat;
+      mask-composite: exclude;
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .services {
+    padding-bottom: 40px;
+
+    &__item {
+      flex-direction: column;
+
+      &.reverse {
+        .services__content {
+          text-align: center;
+          align-items: center;
+        }
+
+        .services__img {
+          border-right: none;
+        }
+      }
+    }
+
+    &__title {
+      text-align: center;
+      padding: 12px;
+    }
+
+    &__content {
+      padding: 32px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      order: 3;
+    }
+
+    &__desc {
+      text-align: center;
+      max-width: 700px;
+    }
+
+    &__links {
+      width: 100%;
+      flex-direction: column;
+      gap: clamp(12px, 1.1vw, 16px);
+
+      .btn {
+        width: 100%;
+        max-width: 360px;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      padding: 32px 24px;
+      border-left: none;
+      display: flex;
+      justify-content: center;
+
+      img {
+        max-width: 700px;
+        min-height: 163px;
+        -webkit-mask:
+          linear-gradient(var(--color-white) 0 0),
+          url('/img/index/clip-path/services-top-left-sm.svg') top left / 31px 31px no-repeat,
+          url('/img/index/clip-path/services-bot-right-sm.svg') bottom right / 31px 31px no-repeat;
+        mask-composite: exclude;
+      }
+    }
+  }
+}

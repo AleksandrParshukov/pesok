@@ -1,0 +1,117 @@
+.pricelist {
+  padding-bottom: 110px;
+  margin-top: 32px;
+  position: relative;
+}
+.pricelist .h1 {
+  color: var(--color-black);
+}
+.pricelist__item {
+  border-bottom: 1px solid var(--color-gray);
+}
+.pricelist__top {
+  width: 100%;
+  padding: 32px;
+  border-block: 1px solid var(--color-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.pricelist__content {
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  align-items: end;
+  gap: 60px;
+}
+.pricelist__desc {
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.pricelist__desc ul {
+  font-weight: 500;
+  list-style: outside;
+  margin-top: 0.5em;
+}
+.pricelist__desc .btn {
+  margin-top: 24px;
+}
+.pricelist__condition {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  max-width: 422px;
+}
+.pricelist__bonuses {
+  margin-top: 140px;
+  display: flex;
+}
+.pricelist__bonuses li {
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 32px;
+  border-block: 1px solid var(--color-gray);
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.pricelist__bonuses li.caption {
+  color: var(--color-white);
+  background: linear-gradient(180deg, #70be44 0%, #59a346 100%);
+}
+.pricelist__bonuses li:last-child {
+  border-left: 1px solid var(--color-gray);
+}
+
+@media (max-width: 991.5px) {
+  .pricelist {
+    padding-bottom: 60px;
+  }
+  .pricelist__top {
+    padding: 12px 24px;
+    flex-direction: column;
+    align-items: start;
+  }
+  .pricelist__content {
+    padding: 12px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .pricelist__desc {
+    font-size: 15px;
+  }
+  .pricelist__desc .btn {
+    width: 100%;
+    max-width: 360px;
+    margin-inline: auto;
+  }
+  .pricelist__condition {
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .pricelist__bonuses {
+    margin-top: 60px;
+    flex-direction: column;
+  }
+  .pricelist__bonuses li {
+    font-size: 20px;
+    text-align: center;
+    padding: 16px 24px;
+    border-top: none;
+    border-bottom: 1px solid var(--color-gray);
+    justify-content: center;
+  }
+  .pricelist__bonuses li.caption {
+    border-block: none;
+  }
+  .pricelist__bonuses li:last-child {
+    border-left: 1px solid var(--color-gray);
+  }
+}

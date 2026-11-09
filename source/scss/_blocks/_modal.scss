@@ -1,0 +1,125 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+
+  &.show {
+    display: block;
+    opacity: 1;
+  }
+
+  &__dialog {
+    position: relative;
+    margin: auto;
+    max-width: min(900px, 90vw);
+    height: max-content;
+    position: fixed;
+    inset: 0;
+  }
+
+  &__content {
+    height: max-content;
+    max-height: 95vh;
+    padding: 100px 32px;
+    background: linear-gradient(360deg, #ffd303 0%, #fcb712 100%);
+    display: flex;
+    flex-direction: column;
+    overflow: clip auto;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__close {
+    width: 46px;
+    height: 46px;
+    margin-left: auto;
+    border: 1px solid transparent;
+    border-radius: 100vw;
+    display: grid;
+    place-content: center;
+    transition: border-color 0.25s ease;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    &:hover {
+      border-color: var(--color-black);
+    }
+  }
+
+  &__title {
+    font-family: 'Science Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  form {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  &__note {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-primary);
+    margin-top: 60px;
+  }
+
+  .btn {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: $sm) {
+  .modal {
+    &__dialog {
+      max-width: 90vw !important;
+    }
+
+    &__content {
+      padding: 24px;
+    }
+
+    &__close {
+      width: 32px;
+      height: 32px;
+      top: 12px;
+      right: 12px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+  }
+
+  .cb-modal {
+    &__title {
+      font-size: 18px;
+    }
+
+    &__socials {
+      gap: 24px;
+    }
+
+    &__link {
+      padding: 4px;
+    }
+  }
+}

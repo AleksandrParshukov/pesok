@@ -1,0 +1,35 @@
+@import './blocks/banner.css';
+@import './blocks/info.css';
+@import './blocks/description.css';
+@import './blocks/directions.css';
+@import './blocks/services.css';
+@import './blocks/gallery.css';
+@import './blocks/faq.css';
+@import './blocks/booking.css';
+@import './blocks/condition.css';
+.banner__wrapper {
+  background-image: url("../img/turniry_trenirovki/banner.png");
+}
+.banner__content {
+  background: linear-gradient(180deg, #70be44 0%, #59a346 100%);
+}
+.banner__content .h1 {
+  color: var(--color-yellow);
+}
+.banner__text {
+  color: var(--color-white);
+}
+.banner .btn-more:hover {
+  color: var(--color-yellow);
+}
+
+.breadcrumbs {
+  color: var(--color-white);
+}
+
+@media (max-width: 991.5px) {
+  .condition__content {
+    text-align: start;
+    align-items: start;
+  }
+}
