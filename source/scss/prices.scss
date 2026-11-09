@@ -9,7 +9,7 @@
   padding-bottom: 110px !important;
 
   &__wrapper {
-    background-image: url('/img/prices/banner.png');
+    background-image: url('../img/prices/banner.png');
   }
 
   &__content {
@@ -154,7 +154,7 @@
   }
 
   .wrapper {
-    background-image: url('/img/prices/about-right.svg'), linear-gradient(180deg, #004ba2 0%, #2593d0 100%);
+    background-image: url('../img/prices/about-right.svg'), linear-gradient(180deg, #004ba2 0%, #2593d0 100%);
     background-position:
       top right,
       center;
@@ -186,8 +186,8 @@
     z-index: -1;
     -webkit-mask:
       linear-gradient(var(--color-white) 0 0),
-      url('/img/clip-path/card-left.svg') top left / 36px 236px no-repeat,
-      url('/img/clip-path/card-right.svg') top right / 36px 236px no-repeat;
+      url('../img/clip-path/card-left.svg') top left / 36px 236px no-repeat,
+      url('../img/clip-path/card-right.svg') top right / 36px 236px no-repeat;
     mask-composite: exclude;
   }
 }
@@ -287,7 +287,7 @@
 
   .about {
     .wrapper {
-      background-image: url('/img/prices/about-right.svg'), linear-gradient(180deg, #004ba2 0%, #2593d0 100%);
+      background-image: url('../img/prices/about-right.svg'), linear-gradient(180deg, #004ba2 0%, #2593d0 100%);
       background-position:
         top right -125px,
         center;

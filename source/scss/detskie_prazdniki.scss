@@ -43,7 +43,7 @@
   }
 
   .wrapper {
-    background-image: url('/img/detskie_prazdniki/about-right.svg'), linear-gradient(360deg, #ffd303 0%, #fb0 100%);
+    background-image: url('../img/detskie_prazdniki/about-right.svg'), linear-gradient(360deg, #ffd303 0%, #fb0 100%);
     background-position:
       top right,
       center;
@@ -76,8 +76,8 @@
     z-index: -1;
     -webkit-mask:
       linear-gradient(var(--color-white) 0 0),
-      url('/img/clip-path/card-left.svg') top left / 36px 236px no-repeat,
-      url('/img/clip-path/card-right.svg') top right / 36px 236px no-repeat;
+      url('../img/clip-path/card-left.svg') top left / 36px 236px no-repeat,
+      url('../img/clip-path/card-right.svg') top right / 36px 236px no-repeat;
     mask-composite: exclude;
   }
 }

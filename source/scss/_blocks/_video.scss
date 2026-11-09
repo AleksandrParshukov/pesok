@@ -81,7 +81,7 @@
     border-radius: 12px 12px 0 12px;
     -webkit-mask:
       linear-gradient(var(--color-white) 0 0),
-      url('/img/index/clip-path/video-bot-right.svg') bottom right / 50px 75px no-repeat;
+      url('../img/index/clip-path/video-bot-right.svg') bottom right / 50px 75px no-repeat;
     mask-composite: exclude;
     overflow: hidden;
   }
@@ -179,8 +179,8 @@
       border-radius: 0 12px 0 12px;
       -webkit-mask:
         linear-gradient(var(--color-white) 0 0),
-        url('/img/index/clip-path/video-bot-right-sm.svg') bottom right / 35px 40px no-repeat,
-        url('/img/index/clip-path/video-top-left-sm.svg') top left / 35px 40px no-repeat;
+        url('../img/index/clip-path/video-bot-right-sm.svg') bottom right / 35px 40px no-repeat,
+        url('../img/index/clip-path/video-top-left-sm.svg') top left / 35px 40px no-repeat;
       mask-composite: exclude;
       overflow: hidden;
     }

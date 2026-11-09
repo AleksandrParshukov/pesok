@@ -14,13 +14,14 @@
     &.sport {
       color: var(--color-primary);
       background-image:
-        url('/img/index/types-sport.svg'), linear-gradient(135deg, var(--color-secondary) 0%, #ffd303 100%);
+        url('../img/index/types-sport.svg'), linear-gradient(135deg, var(--color-secondary) 0%, #ffd303 100%);
       justify-content: end;
     }
 
     &.event {
       color: var(--color-white);
-      background-image: url('/img/index/types-event.svg'), linear-gradient(135deg, #59a346 0%, var(--color-green) 100%);
+      background-image:
+        url('../img/index/types-event.svg'), linear-gradient(135deg, #59a346 0%, var(--color-green) 100%);
 
       .btn-white {
         color: var(--color-green);

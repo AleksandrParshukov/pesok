@@ -4,7 +4,7 @@
   padding-bottom: 110px !important;
 }
 .banner__wrapper {
-  background-image: url("/img/store/banner.svg"), url("/img/store/banner-right.svg"), linear-gradient(135deg, #68b2e2 0%, #004ba2 100%);
+  background-image: url("../img/store/banner.svg"), url("../img/store/banner-right.svg"), linear-gradient(135deg, #68b2e2 0%, #004ba2 100%);
   background-position: bottom 58px right 150px, top right, center;
   background-repeat: no-repeat;
   background-size: 333px 443px, 201px 531px, auto;
@@ -55,7 +55,7 @@
   grid-column: span 2;
   background: linear-gradient(to bottom, #68b2e2 0%, #004ba2 100%);
   border-radius: 12px 0 12px 0;
-  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("/img/store/clip-path/store-bot-left.svg") bottom left/50px 55px no-repeat, url("/img/store/clip-path/store-top-right.svg") top right/50px 55px no-repeat;
+  -webkit-mask: linear-gradient(var(--color-white) 0 0), url("../img/store/clip-path/store-bot-left.svg") bottom left/50px 55px no-repeat, url("../img/store/clip-path/store-top-right.svg") top right/50px 55px no-repeat;
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
